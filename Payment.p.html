@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Mary's</title>
+    <link rel="stylesheet" href="main.st.css">
+    <link rel="stylesheet" href="form2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16 (2)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16 (2)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16 (2)/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16 (2)/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="-web-logo.png" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Consulting.html">Consulting</a></li>
+                <li><a href="Payment.p.html">Payment Portal</a></li>
+                <li><a href="Pharmcy.html">Pharmcy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><u>Payments portal</u></h1>
+        <h2>Payment Information</h2>
+        <div class="form-group">
+            <label for="payment-type">Payment Type </label>
+            <select name="payment-type" id="payment-type" required>
+                <option value="">Select Payment Type</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="crypto">Cryptocurrency</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="invoice">Invoice No.</label>
+            <input type="tel" name="invoice" id="invoice" placeholder="Enter Invoice No." required>
+        </div>
+
+        <div class="form-group">
+            <label for="patient-name">Patient Name </label>
+            <input type="text" name="patient-name" id="patient-name" placeholder="Enter the patient's name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Amount </label>
+            <input type="text" name="amount" id="amount" placeholder="Ex : 10000.00" required>
+        </div>
+
+        <h2>Payer Information<h2>
+
+        <div class="form-group">
+            <label for="payer-name">Payer Name</label>
+            <input type="text" name="payer-name" id="payer-name" placeholder="Enter the payee's name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nic-passport">NIC or Passport No</label>
+            <input type="text" name="nic-passport" id="nic-passport" placeholder="Enter the NIC or Passport No." required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact No.</label>
+            <input type="tel" name="contact" id="contact" placeholder="Ex : 07XXXXXXXX" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" placeholder="name@company.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address </label>
+            <input type="text" name="address" id="address" placeholder="Enter your address" required>
+        </div>
+        <h2><u>Terms of Service</u></h2>
+        <h3>All payments are subject to the following conditions</h3>
+        <p>It is important that care is taken when using the online facility to ensure that you provide the correct information. To facilitate this, the payment system requests that you confirm correctness of data prior to proceeding to the next step. Your credit card will be debited once payment is approved.
+            The hospital cannot accept liability for a payment not reaching the hospital due to you quoting incorrect card details or personal details or invoice number. Neither can we accept liability if payment is refused or declined by the credit card supplier for any reason.</p>
+        <h3>Refund Policy</h3>
+        <p>Any payment made by the customer after accepting the terms & conditions stated herein, will not be refunded due to any reason whatsoever.</p>
+
+        <button type="submit">Submit</button>
+    </form>
+    </main>
+    <footer>
+        <p>Connect us</p>
+        <a href="#">Hotline : +94 12 7743000</a><br>
+        <a href="#">infoinfo@stmary'shosptial</a>
+        <p>284/2<br>Evergreen Park RD<br>Colombo 08<br>Sri Lanka</p>
+        <div></div>
+            <p>Follow Us On:
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </p>
+        </div>
+        <p class="rights">&copy; 2024 St Mary's General Hospital.This is a copyright website.</p>
+    </footer>
+</body>
+</html>

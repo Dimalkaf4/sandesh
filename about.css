@@ -1,0 +1,149 @@
+.table{
+    width:100%;
+    height:auto; 
+    border:none; 
+}
+td,th{
+    padding: 30px;
+    border:none;
+    text-align:center;
+    font-size:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+th{
+    background-color:#d4dcdc;
+}
+tr:nth-child(odd){
+    background-color:#7cc4c4;
+}
+tr:nth-child(even){
+    background-color: azure;
+}
+.img1{
+    width:350px;
+    height:350px;
+    transition:transfrom 0.3s ease;
+    border-radius: 5px;
+}
+.img2{
+    width:350px;
+    height:350px;
+    transition:transfrom 0.3s ease;
+    border-radius: 5px;
+}
+.img3{
+    width:350px;
+    height:350px;
+    transition:transfrom 0.3s ease;
+    border-radius: 5px;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.05);
+}
+
+.map{
+    width:350px;
+    height:350px;
+}
+.sect01{
+    margin-bottom: 30px;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* General Table Styles */
+    .table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+
+    th, 
+    .tds1, 
+    .tds2, 
+    .tds3, 
+    .if, 
+    .thlocation, 
+    .thkey {
+        display: none;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+    }
+
+    /* Image Adjustments */
+    .img1, .img2, .img3 {
+        width: 90%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 auto;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .img1:hover,
+    .img2:hover,
+    .img3:hover {
+        transform: scale(1.05);
+    }
+
+    /* Description Adjustments */
+    .tdm {
+        font-size: 14px;
+        text-align: justify;
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-top: 10px;
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hide unnecessary elements */
+    .map {
+        display: none;
+    }
+
+    /* Button Styles */
+    .button1 {
+        font-size: 16px;
+        margin: 10px ;
+        margin-left:70px;
+        border: none;
+        background-color: #7cc4c4;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width:60%;
+        justify-content: center;
+        
+    }
+
+    .button1:hover {
+        background-color: #5ca5a5;
+    }
+}

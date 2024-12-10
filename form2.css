@@ -1,0 +1,94 @@
+.patientR{
+    background-color:rgba(0, 145, 255, 0.444);
+}
+
+h1{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgba(0, 0, 0, 0.781);
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+    font-size: 25px;
+}
+
+.form-group select,
+.form-group input {
+    width:50%; /* Full width minus padding and borders */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p{
+    font-size: 20px;
+    margin-right:70px;    
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Adjust font size for mobile phones */
+    }
+
+    .form-group label {
+        font-size: 18px; /* Adjust font size for mobile phones */
+    }
+
+    .form-group select,
+    .form-group input {
+        width: 100%; /* Full width for mobile phones */
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px; /* Adjust font size for mobile phones */
+        padding: 8px 16px;
+        width: 100%; /* Full width for mobile phones */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size for mobile phones */
+        margin-right: 0; /* Remove right margin for mobile phones */
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+    }
+}

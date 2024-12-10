@@ -1,0 +1,119 @@
+h1{
+    background-color:white;
+    font-size:35px;
+    text-align: center;
+    padding:2px;
+    color:#7cc4c4;
+}
+p{
+    font-size:20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.simg {
+    width: 100%; /* Full width of the container for responsiveness */
+    height:200px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap:wrap;/* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    padding:10px; /* Padding around the container */
+    font-size:25px;
+    text-align: center;
+}
+
+/* Container Item Styling */
+.container > div {
+    flex: 1 1 calc(25% - 100px); /* 3 items per row with gap consideration *
+    text-align: center; /* Center-align text and images */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+    position: relative; /* Position relative for popup positioning */
+    overflow:hidden;
+}
+
+/* Hover Effects */
+.container > div:hover .simg {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+/* Popup Label Styling */
+.container > div .popup-label {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to the container */
+    bottom: 10px; /* Positioned at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+}
+.button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:10px;
+    padding: 10px 15px;
+    width:15%;
+    border-radius:15px;
+    border-color:rgb(83, 10, 219);
+    color:black;
+    background-color: antiquewhite;
+    cursor: pointer;
+
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Adjusted font size for tablets */
+        padding: 5px; /* Increased padding for better spacing */
+    }
+
+    p {
+        font-size: 18px; /* Adjusted font size for tablets */
+    }
+
+    .container {
+        font-size: 20px; /* Adjusted font size for tablets */
+        padding: 10px; /* Reduced padding for tablets */
+    }
+
+    .container > div {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+        padding: 15px; /* Increased padding for better spacing on tablets */
+    }
+
+    .simg {
+        border-radius: 8px; /* Slightly smaller border-radius for tablets */
+    }
+
+    .button {
+        font-size: 14px; /* Smaller font size for better fit */
+        font-weight: bold;
+        margin: 8px auto; /* Center button horizontally */
+        padding: 8px 10px; /* Reduce padding for compact look */
+        width: 80%; /* Full width on mobile with some spacing */
+        max-width: 250px; /* Restrict the maximum width */
+        border-radius: 12px; /* Slightly smaller rounded corners */
+        border: 2px solid rgb(83, 10, 219); /* Visible border */
+        color: black;
+        background-color: antiquewhite;
+        cursor: pointer;
+        text-align: center; /* Ensure text stays centered */
+        display: block; /* Ensure the button doesn't collapse */
+    }
+
+    .button:hover {
+        background-color: rgb(230, 218, 207); /* Subtle hover effect */
+    }
+}
+

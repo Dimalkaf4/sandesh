@@ -1,0 +1,133 @@
+.Cbody{
+    background-color:white;
+}
+.main1{
+    background-color:rgb(199, 199, 199);
+}
+
+
+.cimg{
+    position:absolute;
+    left:40%;
+    width:900px;
+    margin-top: 40px;
+    height:700px;
+    border-radius:8px;
+}
+
+.para1{
+    color:rgba(0, 0, 0, 0.721);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:relative;
+    top:0px;
+    font-size:15px;
+}
+
+.registration-c h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+
+}
+.registration-c{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.registration-c input{
+    font-size: 16px;
+    padding:10px 50px;
+    border: 0;
+    width:30%;
+    border-radius: 5px;
+
+    
+}
+.registration-c button{
+    font-size: 18px;
+    font-weight: bold;
+    margin:20px 10px;
+    padding: 10px 15px;
+    width:15%;
+    border-radius:8px;
+    border-color:white;
+}
+
+.registration-c select {
+    margin-top: 20px;
+    width:35%; /* Full width minus padding and borders */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+} 
+
+
+option{
+    width:15%;
+    font-size: 20px;
+}
+
+textarea{
+    margin-top:20px;
+    text-align: center;
+    font-size:18px;
+}
+
+.Chead2{
+    text-align: center;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    .registration-c h1 {
+        font-size: 30px; /* Adjust font size for tablets */
+    }
+
+    .registration-c input, .registration-c select, textarea {
+        font-size: 14px; /* Adjust font size for tablets */
+        padding: 8px; /* Adjust padding for tablets */
+    }
+
+    .registration-c button {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+
+    .cimg{
+        width:0%;
+        height:0%;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .registration-c h1 {
+        font-size: 30px; /* Adjust font size for tablets */
+    }
+
+    .registration-c input,
+    .registration-c select,
+    .registration-c textarea {
+        font-size: 14px; /* Adjust font size for tablets */
+        padding: 8px; /* Adjust padding for tablets */
+        width:100%;
+    }
+
+    .registration-c button {
+        font-size: 12px; /* Adjust font size for tablets */
+        width:70px;
+    
+    }
+
+    .cimg {
+        display: none; /* Hide image on tablets */
+    }
+
+    .Chead2{
+        font-size: 25px;
+        text-align: center ;
+    }
+}

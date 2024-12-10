@@ -1,0 +1,144 @@
+.Dbody {
+    background-color: gainsboro;
+  }
+  
+.Dmain {
+  width: 100%;
+  height:650px;
+}
+
+.para2{
+  position: absolute;
+  top:500px;
+  font-size:25px;
+  padding:10px;
+}
+
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust to full width of the grid cell */
+    height: 100%; /* Adjust to full height of the grid cell */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%; /* Set to 100% to fill the container */
+    height: 100%; /* Set to 100% to fill the container */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust to container width */
+    height: 100%; /* Adjust to container height */
+    background:rgba(0, 251, 255, 0.374); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .overlay .text {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column size and number of columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Optional padding around grid container */
+  }
+  
+  section01, section02 {
+    padding: 20px; /* Optional padding for sections */
+  }
+  
+  footer {
+    padding: 20px; /* Optional padding for footer */
+  }
+
+ /* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Main Image */
+  .Dmain {
+    width: 100%;
+    height: auto; /* Reduce height for better fit on smaller screens */
+    padding: 0px;
+  }
+
+  /* Paragraph text */
+  .para2 {
+    position: absolute;
+    top: 110px;
+    font-size: 14px; /* Reduce font size for readability */
+    padding: 0px;
+    width: 90%; /* Make the paragraph width fit better on mobile */
+    left: 5%;
+    text-align: center; /* Center-align the paragraph text */
+  }
+
+  /* Grid for Image Containers */
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Reduce gap between items */
+    padding: 15px; /* Reduce padding around grid container */
+  }
+
+  .image-container {
+    flex: 1 1 calc(50% - 10px); /* Two items per row with a gap */
+    max-width: calc(50% - 10px); /* Ensure items do not exceed half of the container width */
+    position: relative;
+    height: auto; /* Ensure responsive height */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust to container width */
+    height: 100%; /* Adjust to container height */
+    background: rgba(0, 251, 255, 0.374); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+
+  .overlay .text {
+    font-size: 16px; /* Reduce font size for better mobile view */
+    padding: 15px;
+    text-align: center; /* Ensure the text is centered in the overlay */
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Button Styling */
+  .button3 {
+    display: none; /* Remove the "Call Us Now" button */
+  }
+}
+
+
